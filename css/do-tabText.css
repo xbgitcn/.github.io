@@ -1,0 +1,152 @@
+/*tabText 头部切换特效 */
+/* Default tab style */
+
+/*标签居上do-lable-row时：*/
+.do-tabtext-nav .do-lable-row .do-display{display:inline-block}
+.do-tabtext-nav .do-lable-row.do-lable-row-left{text-align: left}
+.do-tabtext-nav .do-lable-row.do-lable-row-middle{text-align: center}
+.do-tabtext-nav .do-lable-row>ul>li {top:0}
+/*.do-textTab{border:0}*/
+
+
+/*!*标签居左do-lable-column时：*!*/
+.do-nav-float{width: 150px;float:left;position: relative;}
+.do-nav-float + div.do-element-tabtext-content{padding-left: 165px; /*overflow-y:auto;*/ }
+.do-tabtext-nav .do-lable-column .do-display{text-align: center;}
+.do-tabtext-nav .do-lable-column>ul>li{display: block;}
+.do-tabtext-nav .do-lable-column .do-addTab-Btn ul li{width:100%}
+
+
+.do-lableStyle-col2>ul>li.cur{border-left:5px solid gray}
+
+/*列1样式：*/
+.do-tabtext-nav .do-lableStyle-col1>ul>li.cur,.do-tabtext-nav .do-lableStyle-col1>ul>li.cur .do-padding{background-color: transparent!important;-webkit-transition:all .2s linear;transition:all .2s linear;}
+.do-lableStyle-col1>ul>li{border: 1px solid #E4E4E4;border-top-width: 0}
+.do-lableStyle-col1>ul>li:first-child{border-top-width: 1px}
+
+.do-lableStyle1>ul>li,.do-lableStyle3>ul>li,.do-lableStyle4>ul>li,.do-lableStyle-col1>ul>li,
+.do-lableStyle-col2>ul>li,.do-lableStyle-col3>ul>li{transition:all 0.2s linear;}
+
+
+/*tab头部小图片：*/
+.do-textTab .do-tabtext-nav .des > * {display: inline-block;vertical-align: middle;color: inherit;}
+.do-tabText-headImg .do-checkbox {display: inline;}
+.do-tabText-headImg >span{float:right;margin-right: 10px;}
+
+/*标签大小：*/
+.do-lableSize-big>ul>li .do-padding{padding: 12px 20px;!important}
+.do-lableSize-mid>ul>li .do-padding{padding: 10px 16px;!important}
+.do-lableSize-small>ul>li .do-padding{padding: 8px 15px;!important}
+
+/*标签上的图片大小：*/
+.do-lableImgSize-big .des img{max-width: 22px;!important}
+.do-lableImgSize-mid .des img{max-width: 20px;!important}
+.do-lableImgSize-small .des img{max-width: 17px;!important}
+
+.do-textTab-edit .do-color-group{right: 10px;}
+
+.do-textTab .do-tabtext-nav ul li{padding:0}
+
+.do-textTab-edit .do-form-group{font-size: 13px;color: #666;}
+.do-textTab-edit .do-form-group>span{cursor: pointer;font-size: 12px;color: #ADA5A5;}
+
+.do-textTab-edit .do-system-colorStyle{margin-bottom: 0;}
+.do-textTab-edit .do-system-colorStyle .do-form-size li > div{border:0;display:inline-block;width: 50px;padding-top: 0;}
+.do-textTab-edit .do-system-colorStyle .do-form-size li > div p{width:45px;height:25px;}
+
+.do-textTab-edit .do-system-colorStyle .do-form-size li .cur p{border:1px solid black}
+.do-textTab-edit .do-tabTextPrompt>p{color:#B9252B;font-size: 12px;margin-bottom: 15px;}
+
+.do-textTab-edit .do-group-width select{min-width:auto!important;}
+.do-textTab-edit .do-popover-content{padding:9px 10px;}
+.do-textTab-edit .do-tabTextPrompt{padding:0 18px;}
+
+.do-textTab-edit .do-group-width{width: 47%;display: inline-block;margin:0 0 7px 5px;}
+.do-textTab-edit .do-group-width:nth-child(1),.do-textTab-edit .do-group-width:nth-child(3){margin-left: 0}
+.do-textTab-edit .do-openSelf-bottom,.do-textTab-edit .do-openSelf-bottom label{margin-bottom:3px}
+.do-textTab-edit .do-form-size li p{margin-top: 0;}
+.do-textTab .do-tabtext-nav {background-color:transparent!important;}
+
+
+.do-textTab-edit .do-clear-style{float:right;cursor: pointer;}
+.do-textTab-edit .do-system-colorStyle ul li>div{position: relative;}
+.do-textTab-edit .do-selected-box{position: absolute;top:3px;left:15px;color: white;font-size: 18px;}
+
+
+
+/* 有外边距,实心方块 */
+/*****************************/
+/*.tabs-style-bar{background-color:rgba(40,44,42,.05)}*/
+.tabs-style-bar ul{border:4px solid transparent}
+.tabs-style-bar ul li{margin:0 2px;background-color:#f7f7f7;color:#74777b;text-transform:uppercase;letter-spacing:1px;font-weight:500;font-size:1em;transition:background-color .2s linear,color .2s linear}
+
+/*****************************/
+/* 下划线下划线伸缩特效  */
+/*****************************/
+.do-tabtext-nav .do-lableStyle4 ul li.cur{background-color:transparent!important}
+.do-lableStyle4{-webkit-transition:color .3s cubic-bezier(.7,0,.3,1);transition:color .3s cubic-bezier(.7,0,.3,1)}
+.do-lableStyle4 li::before{position:absolute;bottom:0;left:33%;width:35%;height:1px;background-color:#bcb8b8;content:'';opacity:0;-webkit-transition:-webkit-transform .2s ease-in;transition:transform .2s ease-in;-webkit-transform:scale3d(0,1,1);transform:scale3d(0,1,1)}
+.do-lableStyle4 ul li.cur::before{opacity:1;-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}
+.do-lableStyle4 ul li.cur .des{-webkit-transform:translate3d(0,2px,0);transform:translate3d(0,2px,0)}
+.do-lableStyle4 .des{-webkit-transition:color .3s,-webkit-transform .3s;transition:color .3s,transform .3s}
+
+/*****************************/
+/* Circle 圆角，边框放大特效*/
+/*****************************/
+.do-tabtext-nav .do-lableStyle2 ul li.cur{background-color:transparent!important}
+.do-lableStyle2 ul li::before{position:absolute;left:0;width:100%;height:100%;border:1px solid #bcb8b8;border-radius:30px;content:'';opacity:0;-webkit-transition:-webkit-transform .2s,opacity .2s;transition:transform .2s,opacity .2s;-webkit-transition-timing-function:cubic-bezier(.7,0,.3,1);transition-timing-function:cubic-bezier(.7,0,.3,1);-webkit-transform:scale3d(0,0,1);transform:scale3d(0,0,1)}
+.do-lableStyle2 ul li.cur::before{opacity:1;-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}
+.do-lableStyle2 ul .des{overflow:visible;-webkit-transition:color .3s cubic-bezier(.7,0,.3,1);transition:color .3s cubic-bezier(.7,0,.3,1)}
+.do-lableStyle2 ul .des{display:inline-block}
+.do-lableStyle2 img::before,.do-lableStyle2 ul .des{-webkit-transition:-webkit-transform .3s cubic-bezier(.7,0,.3,1);transition:transform .3s cubic-bezier(.7,0,.3,1)}
+.do-lableStyle2 ul li.cur .des{-webkit-transform:translate3d(0,2px,0);transform:translate3d(0,2px,0)}
+.do-lableStyle2 .icon::before{display:block;margin:0;pointer-events:none}
+.do-lableStyle2 ul li.cur .des img::before{-webkit-transform:translate3d(0,-4px,0);transform:translate3d(0,-4px,0)}
+.do-tabtext-nav .do-lableStyle2 li.cur .do-padding{background-color:transparent!important;}
+
+
+/*****************************/
+/* Line Box 上滑特效*/
+/*****************************/
+.tabs-style-linebox ul li{-webkit-flex:none;flex:none;color:rgba(105, 202, 114, 0.8);-webkit-transition:color .3s;transition:color .3s;vertical-align: middle;}
+.tabs-style-linebox ul li:hover{color:rgb(105, 202, 114)}
+.tabs-style-linebox ul li .do-padding{position:relative;overflow:hidden}
+.tabs-style-linebox ul li .do-padding::after{position:absolute;top:0;left:0;z-index:-1;width:100%;height:100%;content:'';-webkit-transition:background-color .3s,-webkit-transform .3s;transition:background-color .3s,transform .3s;-webkit-transition-timing-function:ease,cubic-bezier(.7,0,.3,1);transition-timing-function:ease,cubic-bezier(.7,0,.3,1);-webkit-transform:translate3d(0,100%,0) translate3d(0,-3px,0);transform:translate3d(0,100%,0) translate3d(0,-3px,0)}
+.tabs-style-linebox ul li.cur .do-padding::after{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
+.tabs-style-linebox ul li:hover .do-padding::after{background-color:rgb(105, 202, 114)}
+.tabs-style-linebox ul li.cur{color:#fff;background-color:rgb(105, 202, 114);-webkit-transition:background-color 1s,-webkit-transform 1s}
+
+
+.do-lableStyle-col2 ul li{border:0}
+.do-lableStyle-col2 ul li.cur{border-left:3px solid gray;-webkit-transition:border-left .1s linear}
+
+
+/*标签间距：*/
+.do-lableMargin-big>ul>li {margin-right: 30px;!important;}
+.do-lableMargin-mid>ul>li{margin-right: 20px;!important;}
+.do-lableMargin-small>ul>li{margin-right: 10px!important;}
+.do-lableMargin-null>ul>li{margin-right: 0;!important;}
+
+
+/*标签在边框样式为“有边框”下的间距（单独设置）：*/
+.do-lableStyle3.do-lableMargin-big>ul>li,
+.do-lableStyle3.do-lableMargin-mid>ul>li,
+.do-lableStyle3.do-lableMargin-small>ul>li,
+.do-lableStyle3.do-lableMargin-null>ul>li{border:1px solid gray}
+/*间距：无：*/
+.do-lableStyle3.do-lableMargin-null>ul>li:not(:first-child){border-left-width:0;margin-left:0;!important;}
+.do-textTab .do-tabText-border{border: 1px solid #EFE7E7;}/*整个tabText的边框色*/
+
+
+@media only screen and (max-width: 640px){
+	.do-nav-float{width:inherit;float:none;}
+	.do-nav-float + div.do-element-tabtext-content{margin-left:0; /*overflow-y:auto;*/ }
+	.do-tabtext-nav .do-lable-column>ul>li{display: inline-block;}
+	.do-lableStyle-col2 ul li.cur{border-left:none;border-bottom: 3px solid gray}
+	.do-element-tabtext-content {padding-left: 0!important;}
+	.do-lableStyle-col1>ul>li {border-top-width: 1px;}
+	.do-element-tabtext-content {padding-top: 12px!important;}
+}
+
+
+
